@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitação de Exclusão de Conta - Star Ev</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        h1, h2 {
+            color: #2c3e50;
+        }
+        ul {
+            margin: 10px 0;
+        }
+        form {
+            margin-top: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #2c3e50;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #34495e;
+        }
+        .feedback {
+            margin-top: 20px;
+            display: none; /* Hidden by default */
+            color: green;
+        }
+        .data-usage {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Solicitação de Exclusão de Conta - Star Ev</h1>
+
+    <h2>Uso de Dados Pessoais</h2>
+    <div class="data-usage">
+        <h3>Nome Completo</h3>
+        <p><strong>Coleta:</strong> Sim</p>
+        <p><strong>Uso:</strong> Utilizado para a emissão de recibos de pagamento.</p>
+        <p><strong>Compartilhamento:</strong> Não</p>
+        <p><strong>Processamento:</strong> Armazenado localmente no app ou em servidores externos para fins de emissão de recibos.</p>
+        <p><strong>Terceiros:</strong> Não compartilhado com terceiros.</p>
+
+        <h3>E-mail</h3>
+        <p><strong>Coleta:</strong> Sim</p>
+        <p><strong>Uso:</strong> Armazenado para o envio de recibos de pagamento de recargas.</p>
+        <p><strong>Compartilhamento:</strong> Não</p>
+        <p><strong>Processamento:</strong> Armazenado em servidores externos para o envio de e-mails automatizados.</p>
+        <p><strong>Terceiros:</strong> Não compartilhado com terceiros.</p>
+
+        <h3>Telefone</h3>
+        <p><strong>Coleta:</strong> Sim</p>
+        <p><strong>Uso:</strong> Armazenado para o envio de recibos de pagamento e cobrança de recargas não pagas.</p>
+        <p><strong>Compartilhamento:</strong> Não</p>
+        <p><strong>Processamento:</strong> Armazenado localmente no app ou em servidores externos para fins de envio de notificações e SMS.</p>
+        <p><strong>Terceiros:</strong> Não compartilhado com terceiros.</p>
+
+        <h3>Endereço Completo (incluindo CEP)</h3>
+        <p><strong>Coleta:</strong> Sim</p>
+        <p><strong>Uso:</strong> Armazenado para a emissão de recibos de pagamento.</p>
+        <p><strong>Compartilhamento:</strong> Não</p>
+        <p><strong>Processamento:</strong> Armazenado localmente ou em servidores externos para fins de emissão de recibos.</p>
+        <p><strong>Terceiros:</strong> Não compartilhado com terceiros.</p>
+
+        <h3>CPF</h3>
+        <p><strong>Coleta:</strong> Sim</p>
+        <p><strong>Uso:</strong> Utilizado para a validação das informações para a cobrança de recargas pagas e validação de impeditivos financeiros.</p>
+        <p><strong>Compartilhamento:</strong> Sim</p>
+        <p><strong>Processamento:</strong> O CPF é compartilhado com entidades financeiras para validação de crédito e segurança.</p>
+        <p><strong>Terceiros:</strong> Compartilhado com o sistema de validação financeira externo.</p>
+
+        <h3>Informações de Cobrança (Cartão de Crédito)</h3>
+        <p><strong>Coleta:</strong> Sim (através de SDK externo)</p>
+        <p><strong>Uso:</strong> Utilizado para a cobrança de recargas pagas através de um SDK externo (Stripe).</p>
+        <p><strong>Compartilhamento:</strong> Sim</p>
+        <p><strong>Processamento:</strong> Os dados são processados exclusivamente pelo SDK de terceiros (Stripe) para a realização de transações financeiras.</p>
+        <p><strong>Terceiros:</strong> Compartilhado com o Stripe, que gerencia as transações financeiras.</p>
+
+        <h3>Localização</h3>
+        <p><strong>Coleta:</strong> Sim</p>
+        <p><strong>Uso:</strong> Utilizado para validar se o usuário está fisicamente próximo ao carregador, para permitir o início das sessões de recarga.</p>
+        <p><strong>Compartilhamento:</strong> Não</p>
+        <p><strong>Processamento:</strong> Utilizado localmente no dispositivo para validação de proximidade. Os dados de localização não são armazenados.</p>
+        <p><strong>Terceiros:</strong> Não compartilhado com terceiros.</p>
+    </div>
+
+    <h3>Resumo de Terceiros e SDKs Utilizados</h3>
+    <p><strong>Stripe:</strong> Utilizado para processar os pagamentos via cartão de crédito. Esse SDK coleta e processa dados financeiros para completar as transações.</p>
+
+    <h3>Política de Segurança e Privacidade</h3>
+    <p>Todos os dados coletados são utilizados exclusivamente para os fins descritos e protegidos por sistemas de segurança para evitar acessos não autorizados. A localização é utilizada apenas durante as sessões de recarga e não é armazenada permanentemente.</p>
+
+
+    <h2>Passos para Solicitar a Exclusão</h2>
+    <ol>
+        <li>Acesse o <strong>Formulário de Solicitação de Exclusão de Conta</strong>.</li>
+        <li>Preencha as informações solicitadas:
+            <ul>
+                <li>Nome de usuário</li>
+                <li>Endereço de e-mail cadastrado no app Star Ev</li>
+            </ul>
+        </li>
+        <li>Descreva brevemente o motivo da exclusão (opcional).</li>
+        <li>Envie sua solicitação. A equipe de suporte analisará o pedido e confirmará a exclusão da conta por e-mail dentro de <strong>10 dias úteis</strong>.</li>
+    </ol>
+
+    <h2>Dados que serão excluídos</h2>
+    <ul>
+        <li>Informações pessoais (nome, e-mail) e histórico de uso do aplicativo.</li>
+        <li>Detalhes de recargas, registros de atividades em eletropostos e métodos de pagamento.</li>
+        <li>Preferências de usuário e configurações personalizadas.</li>
+    </ul>
+
+    <h2>Dados que serão mantidos (se aplicável)</h2>
+    <ul>
+        <li>Informações exigidas por lei para fins contábeis ou regulatórios, como registros de transações financeiras, que serão mantidos por até <strong>5 anos</strong>.</li>
+        <li>Relatórios de atividades anônimos que não podem ser vinculados ao usuário.</li>
+    </ul>
+
+    <h2>Período de armazenamento adicional</h2>
+    <p>Após a exclusão da conta, alguns dados relacionados a transações e obrigações legais poderão ser mantidos por até <strong>5 anos</strong>, conforme exigido por lei. Dados anônimos podem ser mantidos indefinidamente para melhoria do serviço.</p>
+
+    <h2>Formulário de Solicitação de Exclusão</h2>
+    <form id="exclusaoForm">
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="nome" required aria-label="Nome Completo">
+
+        <label for="email">E-mail Registrado:</label>
+        <input type="email" id="email" name="email" required aria-label="E-mail Registrado">
+
+        <label for="razao">Razão para Pedido de Exclusão:</label>
+        <textarea id="razao" name="razao" rows="4" aria-label="Razão para Exclusão"></textarea>
+
+        <button type="submit">Enviar Solicitação</button>
+    </form>
+
+    <div class="feedback" id="feedbackMessage">Obrigado! Sua solicitação foi enviada com sucesso.</div>
+
+    
+    <script>
+        document.getElementById('exclusaoForm').onsubmit = function(event) {
+            event.preventDefault(); // Prevent default form submission
+            const email = encodeURIComponent(document.getElementById('email').value);
+            const nome = encodeURIComponent(document.getElementById('nome').value);
+            const razao = encodeURIComponent(document.getElementById('razao').value);
+
+            const body = `Email: ${email}%0AName: ${nome}%0ADescription: ${razao}`;
+            this.action = `mailto:admin@walleautomacao.com.br?subject=Solicitação de Exclusão de Conta&body=${body}`;
+            window.location.href = this.action; // Open the mail client
+
+            document.getElementById('feedbackMessage').style.display = 'block'; // Show feedback message
+        };
+    </script>
+
+</body>
+</html>
+
+
